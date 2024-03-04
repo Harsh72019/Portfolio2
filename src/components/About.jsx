@@ -1,7 +1,6 @@
 import React from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
@@ -47,11 +46,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+       I recently completed a job simulation program of JP morgan and Chase in software engineering . Worked as a web developer and Team leader in an Edtech startup . Completed my online internship at CodeClause . Led my team in Xpression Hackathon held across U.P. and secured 4th position. Solved more than 200 Leetcode problems and obtained 5 stars * in many hackerrank segments including c , c++ , python . Created projects on blockchain , Machine learning and many development projects as well.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

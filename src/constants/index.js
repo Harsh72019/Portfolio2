@@ -4,7 +4,6 @@ import {
   creator,
   web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
@@ -14,15 +13,15 @@ import {
   mongodb,
   git,
   figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  mindspace,
+  coderspoint,
+  ecommerce,
   threejs,
+  faction,
+  codeClause,
+  miclone,
+  prodesk,
+  cinesphere
 } from "../assets";
 
 export const navLinks = [
@@ -33,6 +32,10 @@ export const navLinks = [
   {
     id: "work",
     title: "Work",
+  },
+  {
+    id: "project",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -46,15 +49,15 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "ReactJs Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Software Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Video Editing",
     icon: creator,
   },
 ];
@@ -71,10 +74,6 @@ const technologies = [
   {
     name: "JavaScript",
     icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
   },
   {
     name: "React JS",
@@ -108,99 +107,43 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
+
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
     title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    company_name: "Faction IT Solutions",
+    icon: faction,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "April 2023 - November 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Created an e-learning platform using MERN",
+      "It is relatively faster than most of the similar platforms of the current time",
+      "Also worked as a DSA trainer and imparted trainings in many renowned colleges",
+      "Worked as the leader of the intern development team",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: "Python Developer",
+    company_name: "CodeClause",
+    icon: codeClause,
+    iconBg: "#383E56",
+    date: "September 2023 - October 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Completed an online internship provided by codeclause",
+      "Build various projects using python Tkinter and many more",
+      "Implementing responsive design using python",
+      "It was remote internship",
     ],
-  },
-];
-
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Mind Space",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web app that provides spiritual solution to mentally ill people. Intergrated a chat bot with respect to Bhagwad Gita database to provide you solution to your queries . Also provided a personalised check for an individual and provide relevant remedies",
     tags: [
       {
         name: "react",
@@ -214,14 +157,22 @@ const projects = [
         name: "tailwind",
         color: "pink-text-gradient",
       },
+      {
+        name: "Express",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Node",
+        color: "green-text-gradient",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: mindspace,
+    source_code_link: "https://github.com/Harsh72019",
   },
   {
-    name: "Job IT",
+    name: "E Commerece",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "E commerece website with full backend and front end fucntionality including login , logout , pagination and also admin panel to get reports in the form of chart and many more ",
     tags: [
       {
         name: "react",
@@ -232,34 +183,89 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Node",
         color: "pink-text-gradient",
       },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
       {
-        name: "nextjs",
+        name: "MongoDB",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Express",
+        color: "green-text-gradient",
+      },
+    ],
+    image: ecommerce,
+    source_code_link: "https://github.com/Harsh72019",
+  },
+  {
+    name: "Coders point",
+    description:
+      "A highly functional and easy to use e-learning web app that unlocks knowledge for you .Scalable and faster than most of the e-learning platform of current time achieving a score of 91% faster",
+    tags: [
+      {
+        name: "React js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "firebase",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: coderspoint,
+    source_code_link: "https://coderspoint.in/",
+  },
+  {
+    name: "Mi Clone",
+    description:
+      "Built and mi clone with a beautiful front end showing my design capabilities",
+    tags: [
+      {
+        name: "React js",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: miclone,
+    source_code_link: "https://miclonebyharsh.netlify.app/",
+  },
+  {
+    name: "Prodesk Clone",
+    description:
+      "Built a clone of a organisation's website to get an internship ;)",
+    tags: [
+      {
+        name: "React js",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: prodesk,
+    source_code_link: "https://prodeskclone.netlify.app/",
+  },
+  {
+    name: "Cine Sphere",
+    description:
+      "A web app / recommender system based on machine learning that provides you the best and closest recommendations to what you have already watched",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "scikit-learn",
+        color: "green-text-gradient",
+      },
+      {
+        name: "streamlit",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: cinesphere,
+    source_code_link: "https://github.com/Harsh72019",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences,  projects };

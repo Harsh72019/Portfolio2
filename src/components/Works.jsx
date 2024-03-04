@@ -1,4 +1,4 @@
-import React from "react";
+import React , {Fragment} from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
@@ -17,7 +17,7 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div  variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
           max: 45,
@@ -69,10 +69,10 @@ const ProjectCard = ({
 
 const Works = () => {
   return (
-    <>
-      <motion.div variants={textVariant()}>
+    <Fragment >
+      <motion.div id="project" variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+        <h2 className={`${styles.sectionHeadText}`}>Projects</h2>
       </motion.div>
 
       <div className='w-full flex'>
@@ -93,7 +93,7 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-    </>
+    </Fragment>
   );
 };
 
